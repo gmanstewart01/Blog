@@ -12,17 +12,20 @@ To manage and track these interactions securely across multiple pages and to ens
 <br>
 With this understanding, we can now dive into the step-by-step process of setting up and using sessions in PHP, so you can implement secure, persistent user interactions on your own website. The final product of this tutorial should be a login page where a user submits their username, a welcome page, a secondary page to prove the session saved the user's data, and a logout page. In each step of the following sections, there will be both a specific list of instructions that the user should follow, followed by an explanation. Each is labelled as such.
 
+<br>
+
 # Initial Setup
 #### Instructions: 
-Clone this repository in the directory of your choice. Click on the green <>Code button in this github repository and copy the https link. Navigate to the directory of your choice in the terminal, type git clone and then paste the link you copied before.
+Clone this repository in the directory of your choice. Click on the green `<>Code` button in this github repository and copy the https link. Navigate to the directory of your choice in the terminal, type git clone and then paste the link you copied before.
 
 <br>
-In your directory should now be 6 files: docker-compose-yml, Dockerfile, index.php, logout.php, page2.php, and welcome.php. Pull up your terminal, navigate to this directory and type the following: docker-compose up. Your docker application should now be running a local host that you can visit by typing in the following: `<http://localhost:4000/index.php>`.
+
+In your directory should now be 6 files: docker-compose-yml, Dockerfile, index.php, logout.php, page2.php, and welcome.php. Pull up your terminal, navigate to this directory and type the following: docker-compose up. Your docker application should now be running a local host that you can visit by typing in the following: `http://localhost:4000/index.php`.
 
 # Tutorial
 
 ### Step 1: Create a basic HTML form
-Open your index.php file. In the body section underneath the first paragraph tag, create an HTML form element: `<form>``</form>`
+Open your `index.php file`. In the body section underneath the first paragraph tag, create an HTML form element: `<form>``</form>`
 
 <br>
 Inside your form element, create an input HTML element that asks the user for text. It should also have a special id with a name of your choosing attached and be marked as a required field. Finally, add the right before the "required" attribute the following text: `<name="username">`. 
@@ -41,6 +44,8 @@ Return to your form element tag. Within the `<form>` tag, add the following: `ac
 If you have followed all of the instructions correctly, your HTML should look something like this:  
 
 ![Image of Index.php HTML!](image1.png)
+
+<br>
 
 
 ### Step 2: Creating a second .php file to initialize a session\
@@ -79,6 +84,8 @@ Your welcome.php file should look something like this:
 
 ![Image of welcome.php HTML!](image2.png)
 
+<br>
+
 ### Step 3: Calling your session variable
 Navigate to `page2.php`. Intialize your session by typing `<?php session_start(); ?>` at the top. Afterwards, navigate to your HTML code and in the header, create a PHP function where you call your session using the `echo` command, i.e. `<?php echo $_SESSION['username']; ?>`. Make sure this line of code follows your welcome back statement.
 
@@ -98,11 +105,20 @@ Navigate to `logout.php`. Here, we are going to clear out our session variables.
 <br>
 
 Your final login.php file should look something like this:
+
+
 ![Image of login2.php HTML!](image4.png)
+
+<br>
+
+
+# Implementation
+Navigate to `http://localhost:4000/index.php`. It should ask you for a login. Enter whatever you want and hit enter. The next page should welcome you using the username you provided. It will also give you a prompt to navigate to page 2. If you click that link, on the next page, it should welcome you again with the same username you provided. This is remarkable because HTTP is a stateless protocol, meaning that each HTTP request works independently of any other request. In other words, without a session variable attached to your username, the server would treat every request as brand new and would require you to resubmit all of the data you had previously entered in on the past page. Continue to your logout.php and then return to the start. Now, instead of clicking through each php file, try typing `http://localhost:4000/page2.php`. This will throw up an error on the browser because your session has been cleared and destroyed. You would need to create an entirely new session to access page2.php again. This would not be the case if you navigated to page2.php and then tried to type in `http://localhost:4000/welcome.php`. This request would work because you have not cleared your session and as a result, you could return to welcome.php without any errors dispayed in the top section.
 
 
 # References
 * https://www.php.net/manual/en/language.variables.superglobals.php Defines global variables such as POST and SESSION and explains their purpose and limited capabilities.
 * https://www.geeksforgeeks.org/php/advantages-and-disadvantages-of-php/ Describes the advantages and disadvantages of php code
 * https://www.w3schools.com/php/php_sessions.asp Provides an alternate definition of PHP sessions and gives certain examples of session being implemented.
+* https://www.freecodecamp.org/news/stateful-vs-stateless-architectures-explained/ - Provides information about HTTP being a stateless protocol
 * https://www.php.net/manual/en/book.session.php - Provides a whole dictionary of functions that can be attributed to PHP sessions
