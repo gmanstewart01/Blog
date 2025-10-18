@@ -77,13 +77,23 @@ In the header function, you are calling on your global session variable and prin
 <br>
 Your welcome.php file should look something like this:
 
-![Image of Index.php HTML!](instructions/image2.png)
+![Image of welcome.php HTML!](instructions/image2.png)
 
 ### Step 3: Calling your session variable
 Navigate to `page2.php`. Intialize your session by typing `<?php session_start(); ?>` at the top. Afterwards, navigate to your HTML code and in the header, create a PHP function where you call your session using the `echo` command, i.e. `<?php echo $_SESSION['username']; ?>`. Make sure this line of code follows your welcome back statement.
 
+<br>
 
-### Step :
+**Note: The additional php statement at the top of the file is verifying whether the session variable exists or not. If it doesn't, it sends a warning and prompts the user to return to index.php**
+
+<br>
+
+Your final page2.php file should look something like this:
+![Image of page2.php HTML!](instructions/image3.png)
+
+
+### Step 4: Clearing your session variables
+Navigate to `logout.php`. Here, we are going to clear out our session variables. To do this, we start our session with the same command: `<?php session_start(); ?>`. Then, immediately after the session_start function (still within the carrots and before the question mark), type the following: `session_unset();`. This will clear your global session array of all key-value pairs. For security reasons, we will then destroy the session by typing `session_destroy();` directly after `session_unset();` within the carrots and just before the question mark.
 
 
 <br>

@@ -1,7 +1,7 @@
 <?php
-session_start();   // Resume the session
-session_unset();   // Remove all session variables
-session_destroy(); // Completely destroy the session
+   // Resume the session
+  // Remove all session variables
+ // Completely destroy the session
 ?>
 
 <!DOCTYPE html>
