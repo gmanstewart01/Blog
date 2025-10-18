@@ -40,7 +40,7 @@ Return to your form element tag. Within the `<form>` tag, add the following: `ac
 <br>
 If you have followed all of the instructions correctly, your HTML should look something like this:  
 
-![Image of Index.php HTML!](instructions/image1.png)
+![Image of Index.php HTML!](image1.png)
 
 
 ### Step 2: Creating a second .php file to initialize a session\
@@ -77,7 +77,7 @@ In the header function, you are calling on your global session variable and prin
 <br>
 Your welcome.php file should look something like this:
 
-![Image of welcome.php HTML!](instructions/image2.png)
+![Image of welcome.php HTML!](image2.png)
 
 ### Step 3: Calling your session variable
 Navigate to `page2.php`. Intialize your session by typing `<?php session_start(); ?>` at the top. Afterwards, navigate to your HTML code and in the header, create a PHP function where you call your session using the `echo` command, i.e. `<?php echo $_SESSION['username']; ?>`. Make sure this line of code follows your welcome back statement.
@@ -89,13 +89,16 @@ Navigate to `page2.php`. Intialize your session by typing `<?php session_start()
 <br>
 
 Your final page2.php file should look something like this:
-![Image of page2.php HTML!](instructions/image3.png)
+![Image of page2.php HTML!](image3.png)
 
 
 ### Step 4: Clearing your session variables
 Navigate to `logout.php`. Here, we are going to clear out our session variables. To do this, we start our session with the same command: `<?php session_start(); ?>`. Then, immediately after the session_start function (still within the carrots and before the question mark), type the following: `session_unset();`. This will clear your global session array of all key-value pairs. For security reasons, we will then destroy the session by typing `session_destroy();` directly after `session_unset();` within the carrots and just before the question mark.
 
-
 <br>
 
-Explanation: 
+Your final login.php file should look something like this:
+![Image of login2.php HTML!](image4.png)
+
+
+# References
