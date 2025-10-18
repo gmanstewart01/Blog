@@ -15,7 +15,12 @@ With this understanding, we can now dive into the step-by-step process of settin
 <br>
 
 # Initial Setup
-#### Instructions: 
+#### Instructions:
+
+Follow this tutorial to install docker: https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-containers#install-docker-desktop
+
+<br>
+
 Clone this repository in the directory of your choice. Click on the green `<>Code` button in this github repository and copy the https link. Navigate to the directory of your choice in the terminal, type git clone and then paste the link you copied before.
 
 <br>
