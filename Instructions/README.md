@@ -10,14 +10,13 @@ PHP code is also useful for its ability to update data dynamically and persist a
 To manage and track these interactions securely across multiple pages and to ensure that each user’s data and interactions remain consistent as they navigate a website, PHP employs sessions, which store user-specific information on the server. Sessions are particularly useful for users who jump across multiple tabs on a website because they provide the necessary credentials to ensure that the user remains logged in. Picture Amazon’s webpage and imagine how frustrating it would be if every time a user clicked on a product, they were forced to enter in their username and password. PHP sessions facilitate that process. They store a user’s login state on the server and link that logged-in status to a unique session ID on the browser. As a result, when the user revisits the webpage through the same browser at a later time, the browser provides the same session ID which connects with the server’s database.
 
 <br>
-With this understanding, we can now dive into the step-by-step process of setting up and using sessions in PHP, so you can implement secure, persistent user interactions on your own website. The final product of this tutorial should be a login page where a user submits their username, a welcome page, a secondary page to prove the session saved the user's data, and a logout page. In each step of the following sections, there will be both a specific list of instructions that the user should follow, followed by an explanation. Each is labelled as such.
+With this understanding, we can now dive into the step-by-step process of setting up and using sessions in PHP, so you can implement secure, persistent user interactions on your own website. The final product of this tutorial should be a login page where a user submits their username, a welcome page, a secondary page to prove the session saved the user's data, and a logout page. In each step of the following sections, there will be both a specific list of instructions that the user should follow, followed by an explanation regarding the purpose and utility of this procedure.
 
 <br>
 
 # Initial Setup
-#### Instructions:
 
-Follow this tutorial to install docker: https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-containers#install-docker-desktop
+Follow this tutorial to install docker: https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-containers#install-docker-desktop. This is necessary for all users who wish to view their browser on a local host, an incredibly important aspect for PHP coding. Docker is a free platform through which developers can test their software.
 
 <br>
 
@@ -53,12 +52,8 @@ If you have followed all of the instructions correctly, your HTML should look so
 <br>
 
 
-### Step 2: Creating a second .php file to initialize a session\
-Navigate to your `welcome.php` file. At the top of the file, type the following:`<?php session_start(); ?>`.  
-
-
 ### Step 2: Initialize and set your global session variable
-Instructions: Type at the top of your php file the following: `<?php session_start(); ?>`. What this is essentially doing is creating a new session or resuming an existing one. This should be called before anything is sent to the browser as an output. 
+Type at the top of your php file the following: `<?php session_start(); ?>`. What this is essentially doing is creating a new session or resuming an existing one. This should be called before anything is sent to the browser as an output. 
 
 <br>
 
