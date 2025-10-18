@@ -14,7 +14,7 @@ if (!isset($_SESSION['username'])) {
     <title>Page 2</title>
 </head>
 <body>
-    <h1>Welcome back, <?php echo $_SESSION['username']; ?></h1>
+    <h1>Welcome back, <!-- Type your echo command here--></h1>
     <p>This name is remembered from the previous page using PHP sessions.</p>
 
     <p><a href="logout.php">End Session</a></p>
