@@ -102,3 +102,7 @@ Your final login.php file should look something like this:
 
 
 # References
+* https://www.php.net/manual/en/language.variables.superglobals.php Defines global variables such as POST and SESSION and explains their purpose and limited capabilities.
+* https://www.geeksforgeeks.org/php/advantages-and-disadvantages-of-php/ Describes the advantages and disadvantages of php code
+* https://www.w3schools.com/php/php_sessions.asp Provides an alternate definition of PHP sessions and gives certain examples of session being implemented.
+* https://www.php.net/manual/en/book.session.php - Provides a whole dictionary of functions that can be attributed to PHP sessions
