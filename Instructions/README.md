@@ -16,7 +16,23 @@ With this understanding, we can now dive into the step-by-step process of settin
 
 # Initial Setup
 
-Follow this tutorial to install docker: https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-containers#install-docker-desktop. This is necessary for all users who wish to view their browser on a local host, an incredibly important aspect for PHP coding. Docker is a free platform through which developers can test their software.
+Click on the following link to install the web application Docker: 
+
+<br>
+
+For Windows users:
+https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-containers#install-docker-desktop.
+
+
+<br>
+
+For Mac users:
+https://docs.docker.com/desktop/setup/install/mac-install/
+
+
+<br>
+
+This is necessary for all users who wish to view their browser on a local host, an incredibly important aspect for PHP coding. Docker is a free platform through which developers can test their software.
 
 <br>
 
