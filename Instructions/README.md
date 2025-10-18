@@ -20,7 +20,7 @@ Follow this tutorial to install docker: https://learn.microsoft.com/en-us/window
 
 <br>
 
-Clone this repository in the directory of your choice. Click on the green `<>Code` button in this github repository and copy the https link. Navigate to the directory of your choice in the terminal, type git clone and then paste the link you copied before.
+Clone this repository in the directory of your choice. Navigate to the home page of this repository and click on the green `<>Code` button  and copy the https link. Navigate to the directory of your choice in your terminal terminal, type `git clone` and then paste the link you copied before.
 
 <br>
 
