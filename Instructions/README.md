@@ -127,3 +127,4 @@ Navigate to `http://localhost:4000/index.php`. It should ask you for a login. En
 * https://www.w3schools.com/php/php_sessions.asp Provides an alternate definition of PHP sessions and gives certain examples of session being implemented.
 * https://www.freecodecamp.org/news/stateful-vs-stateless-architectures-explained/ - Provides information about HTTP being a stateless protocol
 * https://www.php.net/manual/en/book.session.php - Provides a whole dictionary of functions that can be attributed to PHP sessions
+* https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-containers#install-docker-desktop This is the docker install tutorial provided at the top
