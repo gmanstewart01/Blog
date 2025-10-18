@@ -20,19 +20,25 @@ In your directory should now be 3 files: docker-compose-yml, Dockerfile, and hel
 
 # Tutorial
 
-### Step 1: Initialize your session
+### Step 1: Create a basic HTML form
+Instructions: 
+
+Explanation: 
+
+
+### Step 2: Initialize your session
 Instructions: Type at the top of your php file the following: `<?php session_start(); ?>`
 
 <br>
 
 Explanation: What this is essentially doing is creating a new session or resuming an existing one. This should be called before anything is sent to the browser as an output.
 
-### Step 2: Store your values into your session array
+### Step 3: Store your values into your session array
 Instructions: 
 
 <br>
 
-Explanation: There is a special global session array denoted as `$_SESSION` for php code. What this means is that there is an empty special list (or storage box) of data which can be called upon by any php page after adding session_start(); In order to add data into the list, you must type something similar to the following: `$_SESSION['username'] = 'kate'`; In this case, the data you are storing is in the form of what is called a key-value pair. In this case, `'username'` is the key. A key is the label or name for a piece of data. In this case, it is the label/name for `'kate'`, which is the actual value we are storing.
+Explanation: There is a special global session array denoted as `$_SESSION` for php code. What this means is that there is an empty special list (or storage box) of data which can be called upon by any php page after adding `session_start();`. In order to add data into the list, you must type something similar to the following: `$_SESSION['username'] = 'kate';`. In this case, the data you are storing is in the form of what is called a key-value pair. In this case, `'username'` is the key. A key is the label or name for a piece of data. In this case, it is the label/name for `'kate'`, which is the actual value we are storing.
 
 ### Step 3:
 Instructions:
