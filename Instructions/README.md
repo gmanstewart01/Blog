@@ -48,6 +48,7 @@ In your directory should now be 6 files: docker-compose-yml, Dockerfile, index.p
 Open your `index.php file`. In the body section underneath the first paragraph tag, create an HTML form element: `<form> </form>`
 
 <br>
+
 Inside your form element, create an input HTML element that asks the user for text. It should also have a special id with a name of your choosing attached and be marked as a required field. Finally, add the right before the "required" attribute the following text: `<name="username">`. 
 
 <br>
