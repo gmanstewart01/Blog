@@ -93,7 +93,7 @@ Navigate to the html code at the bottom of your file. In the body tag, paste the
 
 <br>
 
-In the header function, you are calling on your global session variable and printing it to the browser. In the second paragraph tag, you are creating a reference attribute that will redirect users to `page2.php`
+In the header function, the echo command calls on your global session variable and prints it to the browser. In the second paragraph tag, you are creating a reference attribute that will redirect users to `page2.php`
 
 <br>
 Your welcome.php file should look something like this:
