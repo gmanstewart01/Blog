@@ -73,11 +73,11 @@ Type at the top of your php file the following: `<?php session_start(); ?>`. Wha
 
 <br>
 
-Directly after the semicolon and before the question mark and carrot, add a conditional if statement followed by the PHP function `<isset(){}>`. This function essentially checks if a variable exists and is not null.
+Directly after the semicolon and before the question mark and carrot, add a conditional if statement followed by the PHP function `isset(){}`. This function essentially checks if a variable exists and is not null.
 
 <br>
 
-Within the `<isset(){}>` function, add the following within the parentheses: `<$_POST['username']>`. This is drawing upon the username you posted in your index.php file. **Note: the data exists only for that request. If you reload the page or go to another page, the POST data is gone unless you resend it.** So the overall logic of the statement is if welcome.php received the POST variable, run the following code within the brackets.
+Within the `isset(){}` function, add the following within the parentheses: `$_POST['username']`. This is drawing upon the username you posted in your index.php file. **Note: the data exists only for that request. If you reload the page or go to another page, the POST data is gone unless you resend it.** So the overall logic of the statement is if welcome.php received the POST variable, run the following code within the brackets.
 
 <br>
 
