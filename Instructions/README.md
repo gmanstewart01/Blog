@@ -32,7 +32,7 @@ https://docs.docker.com/desktop/setup/install/mac-install/
 
 <br>
 
-This is necessary for all users who wish to view their browser on a local host, an incredibly important aspect for PHP coding. Docker is a free platform through which developers can test their software.
+This is necessary for all users who wish to view their browser on a locally hosted server, an incredibly important aspect for PHP coding. Docker is a free platform through which developers can test their software on a local host.
 
 <br>
 
